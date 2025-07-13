@@ -1,0 +1,86 @@
+
+#wrapper{
+ width: 90%;
+ margin-left: auto;
+ margin-right: auto;
+ margin-top: 50pt;
+}
+
+#title_{
+  font-weight: bold;
+  font-size:large;
+}
+
+#fLhdr{
+  height:35pt;
+  font-size:large;
+}
+
+#fLhdr th{
+  border:2pt solid black;
+}
+
+#fLhdr button{
+  font-size:large;
+}
+
+#fldrLst td a{
+  display:flex;
+  max-width:250pt;
+  overflow:hidden;
+  position: relative;
+}
+
+
+.hid{
+  display:none;
+}
+
+#imgb{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  overflow: scroll;
+  background-color: #00e000;
+}
+
+#imgb .centr{
+  display:block;
+  position:relative;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+#imgb .nice{
+  top:5%;
+  max-width: 90%;
+  max-height: 90%;
+}
+
+#imgb .closeb{
+ position: absolute;
+ top:5pt;
+ right:50pt;
+ font-size:large;
+ opacity: 0.85;
+}
+
+#imgb .lhb_{
+  position: absolute;
+  left:2pt;
+  margin-top:-20pt;
+  font-size:20pt;
+  top:50%;
+  opacity: 0.8;
+}
+
+#imgb .rhb_{
+  position: absolute;
+  right:2pt;
+  margin-top:-20pt;
+  font-size:20pt;
+  top:50%;
+  opacity: 0.8;
+}

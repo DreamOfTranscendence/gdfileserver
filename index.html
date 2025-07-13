@@ -1,0 +1,54 @@
+ <html>
+  <head>
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+  <link rel="shortcut icon" href="/./favicon.ico" type="image/x-icon"/>
+    <title>Google Drive web hosting server</title>
+  </head>
+  <body>
+    <div id="wrapper" style="width:70%;margin-left:auto;margin-right:auto;margin-top:50pt;margin-bottom:50pt;">
+    Google Drive web hosting server:<br>
+    More file hosting storage space for the website so it uses less of the limited-availability free disk space.
+    <!--
+    access any publicly shared googledrive files and folders as if they where hosted on this server.
+    <br><br>
+    NOT RESPONSIBLE FOR DAMAGES CAUSED BY CONTENT OR PAGES ACCESSED THROUGH /f.php/ BECAUSE IT IS A PROXY FOR GOOGLEDRIVE. THE CONTENT IS THE RESPONSIBILITY OF THE UPLOADER WHO UPLOADED IT TO OR OTHERWISE STORED IT OR SHARED IT ON GOOGLE-DRIVE.
+    <br><br>
+    NOTE: In this explanation I use square brackets "[]" to represent non-literal values (a string that you must supply to use).<br>
+    <br>
+    usage: /f.php/[shared folder/file id]/path/to/file.html
+    <br>
+    -->
+    <br><br><br> 
+    examples:
+    <br><br>
+    <a href="/./gd/f.php/pic/">/f.php/pic/</a>
+    <br>
+    <br>
+    <a href="/./gd/f.php/Galaxies.html">/f.php/Galaxies.html</a>
+    <br>
+    <br>
+    <!-- not available here because this only allows one gd folder root id
+    Alias feature:<br>
+    /f.php?alias=[anyname]:[shared folder/file id]<br>
+    Set alternate names for [shared folder/file ids]<br>
+    NOTE: No spaces (whitespace) or commas or simicolins allowed in alias names.<br>
+    Alias names must be at least 5 characters long.<br>
+    Alias names and id values are case-sensitive.</br>
+    It works using http cookies so it must be set individually for each client.<br>
+    It's possible to use an index.html webpage stored in a shared folder accessed with /f.php/[shared folder id]
+    or use the html file's id, and in that html file you could have a javascript redirect that sets the cookie
+    document.cookie="gd_alias_[alias name]=[shared file/folder id];path=/f.php/";
+    or you could use XHR with the f.php?alias=[] method.
+    use "?alias=[]&httponly=1" for setting httpOnly cookies.
+    -->
+    <br>
+    <br>
+    Description feature:<br>
+    /f.php/[shared folder or file id]/dscr.txt<br>
+    /f.php/[shared folder id]/path/to/file.jpeg/dscr.txt<br>
+    Append "/dscr.txt" to the end of any file path to see that Google-Drive file's description attribute if it has one.<br>
+    User "/dscr.json" or "/dscr.html" to get JSON or HTML formatted descriptions.
+    <br>
+    </div>
+  </body>
+</html>
