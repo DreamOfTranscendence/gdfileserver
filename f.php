@@ -3,8 +3,8 @@
 //set_time_limit(600); //10 min timeout
 
  $p2="";
- //fix id now because this is my website
- $fid="0Bxb5iFgmM3V6VkUtdVU1eWV4ZWs";
+ //fixed id, need to change to 1st spot in $p2a, put folder id in url immediately following .php/, 
+ $fid="0Bxb5iFgmM3V6VkUtdVU1eWV4ZWs";  //might need to make adjustments everywhere $p2a and $p2i are used?
 
  $scn=0; //stat update count;
 
@@ -16,7 +16,6 @@
     $sLp=strpos($Rfrr,"/",12);
     if($sLp){
       $or_=substr($Rfrr,0,$sLp);
-      if(strpos($or_,"dreamoftranscendence.x10host.com"))
        header("Access-Control-Allow-Origin: ".$or_);
     }
   }
@@ -176,7 +175,7 @@ if(isset($_GET["dbgr"])) $dbgRt=$_GET["dbgr"]; else $dbgRt="";
  
    global $fid,$p2,$p2a,$p2i,$fidp,$gdFmT,$html_hed;
    $outv="";
-   $psa=array_slice($p2a,0,$p2i);$pf=/*$fid."/". */ implode("/",$psa);$pa='<a href="/./gd/f.php/'.$pf;
+   $psa=array_slice($p2a,1,$p2i);$pf=fid."/".implode("/",$psa);$pa='<a href="/./gd/f.php/'.$pf;
    if($pa[strlen($pa)-1]!="/")$pa.="/";
 
    $outv.=$html_hed.$fdn.'</title></head><body>
@@ -195,7 +194,7 @@ if(isset($_GET["dbgr"])) $dbgRt=$_GET["dbgr"]; else $dbgRt="";
 
    $up="";
    if(count($psa)){
-    $up=/*$fid."/".*/ implode("/",array_slice($psa,0,-1));
+    $up=$fid."/". implode("/",array_slice($psa,0,-1));
    }elseif($fidp&&count($fidp)){
     $up=$fidp[0]; //should add navigation to multiple parents?
    }
